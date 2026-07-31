@@ -1,1 +1,1 @@
-﻿from .world import FrostRunnerWorld as FrostRunnerWorld
+from .world import FrostRunnerWorld as FrostRunnerWorld
