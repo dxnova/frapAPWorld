@@ -145,6 +145,9 @@ def create_regular_locations(world: FrostRunnerWorld) -> None:
         locations_by_region[region_name].append(location_name)
 
     for region_name, location_names in locations_by_region.items():
+        # For now filter out insanity levels
+        if "chapter 0" in region_name:
+            continue
         region = world.get_region(region_name)
 
         location_dict_with_ids = get_location_names_with_ids(location_names)
